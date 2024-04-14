@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: "Roboto",sans-serif;
 }
+
+html, body {
+    height: 100%;
+}
+
 .clr{
     clear: both;
 }
@@ -146,46 +151,58 @@
 }
 .wrapper{
     width: 75%;
-    height: 60vh;
+    height: 100%;
     margin: auto;
+    padding-top: 10px;
+    display: flex;
 }
-.banner{
+
+/* this is left section code */
+
+.left-section{
     width: 75%;
-    height: 30vh;
-    background-color: blue;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    float: left;
-    margin-top: 1vh;
+    padding-right: 30px;
 }
+
+.banner{
+    position: relative;
+    height: 300px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
 .fonts9{
     font-size: 1.5rem;
-    position: relative;
-    display: flex;
+    position: absolute;
+    top: 18px;
+    right: 18px;
     text-decoration: none;
     color: white;
-    top: 18px;
-    padding-left: 1000px;
 }
 .profile-dp{
-    border-radius: 50%;
-    border: 5px solid whitesmoke;
-    position: absolute;
-    top: 170px;
-    left: 20px;
     width: 175px;
     height: 175px;
-    background-image: url(img.jpg);
-    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid grey;
+    margin-top: -97.5px;
+    margin-bottom: 15px;
+    position: relative;
 }
-.aside{
-    width: 24%;
-    height: 60vh;
-    float: right;
-    margin-top: 1vh;
+
+.profile-dp img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
+
+.profile-description {
+    display: flex;
+    justify-content: space-between;
+}
+
 .profile-language{
     width: 100%;
     height: 10vh;
@@ -228,6 +245,15 @@
     color: black;
     text-decoration: none;
 }
+
+
+
+/* this is right section code */
+
+.right-section {
+    width: 25%;
+}
+
 .company-aside{
     width: 100%;
     height: 20vh;
@@ -459,100 +485,72 @@
     top: 875px;
 }
 .profile-section{
-    width: 75%;
-    height: 30vh;
+    position: relative;
     background-color: whitesmoke;
-    margin-top: -300px;
+    padding: 20px;
+    color: black;
 }
 .profile-section h2{
     font-size: 2rem;
-    position: relative;
-    top: 70px;
-    left: 10px;
-    color: black;
+    margin-bottom: 10px;
 }
-.profile-section h5{
+.profile-section span{
     font-size: 1rem;
-    position: relative;
-    top: 70px;
-    left: 10px;
-    color: black;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 .profile-section h3{
     font-size: 1rem;
-    position: relative;
-    display: flex;
-    padding-left: 900px;
-    padding-top: 26px;
-    color: black;
 }
 .profile-section p{
     font-size: 0.8rem;
-    position: relative;
-    top: 26px;
-    left: 10px;
-    color: black;
+    margin-bottom: 10px;
 }
-.profile-section h4 a{
+.profile-section p a{
     font-size: 0.9rem;
     text-decoration: none;
-    position: relative;
-    top: 8px;
-    left: 80px;
     color: royalblue;
 }
-.profile-section h6 a{
+.profile-section .connection-link{
+    display: block;
     font-size: 0.8rem;
     text-decoration: none;
-    position: relative;
-    top: 7px;
-    left: 10px;
     color: royalblue;
+    margin-bottom: 10px;
 }
 .fonts15{
+    position: absolute;
+    top: 25px;
+    right: 25px;
     font-size: 1.5rem;
-    position: relative;
-    display: flex;
     text-decoration: none;
     color: black;
-    top: -120px;
-    padding-left: 1000px;
 }
-#opento{
-    color: white;
+
+.profile-button-wrapper button {
     font-family: "Helvetica";
     font-size: 10pt;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
     background-color: royalblue;
     border: 1px solid;
     border-color: #3399FF;
-    border-radius: 15px;
-    width: 100px;
-    height: 30px;
-    position: absolute;
+    margin-right: 10px;
 }
+
+.profile-button-wrapper button:last-child {
+    margin-right: 0;
+}
+
 #Addprofile{
     color: #3399FF;
-    font-family: "Helvetica";
-    font-size: 10pt;
     background-color: #ffffff;
-    border: 1px solid;
-    border-color: #3399FF;
-    border-radius: 15px;
     width: 120px;
-    height: 30px;
-    position: absolute;
-    left: 340px;
 }
 #more{
     color: black;
-    font-family: "Helvetica";
-    font-size: 10pt;
     background-color: #ffffff;
-    border: 1px solid;
     border-color: black;
-    border-radius: 15px;
-    width: 100px;
-    height: 30px;
-    position: absolute;
-    left: 470px;
 }
