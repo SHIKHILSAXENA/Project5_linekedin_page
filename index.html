@@ -12,144 +12,187 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="head">
-            <i class="fa-brands fa-linkedin logo"></i>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass icon"></i>
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="header-right">
-            <div class="nav">
-                <i class="fa-solid fa-house fonts1"></i><a href="#">home</a>
-                <i class="fa-solid fa-user-group fonts2"></i><a href="#">my network</a>
-                <i class="fa-solid fa-briefcase fonts3"></i><a href="#">jobs</a>
-                <i class="fa-solid fa-comment-dots fonts4"></i><a href="#">messaging</a>
-                <i class="fa-solid fa-bell fonts5"></i><a href="#">notifications</a>
-                <a href="#">
-                    <i class="border"></i>
-                    me
-                </a><i class="fa-solid fa-caret-down fonts6"></i>
-                <i class="fa-solid fa-grip-vertical fonts7"></i><a href="#">for business</a><i class="fa-solid fa-caret-down fonts8"></i>
+    <header class="head flex-h-center">
+        <div class="container">
+            <div class="flex-h-center space-between">
+                <div class="header-left">
+                    <i class="fa-brands fa-linkedin logo"></i>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+        
+                <div class="header-right">
+                    <div class="nav">
+                        <a href="#">
+                            <i class="fa-solid fa-house home"></i>
+                            <span>
+                                home
+                            </span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-user-group my-network"></i>
+                            <span>
+                                my network
+                            </span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-briefcase jobs"></i>
+                            <span>
+                                jobs
+                            </span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-comment-dots messaging"></i>
+                            <span>
+                                messaging
+                            </span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-bell notifications"></i>
+                            <span>
+                                notifications
+                            </span>
+                        </a>
+                        <a href="#">
+                            <i class="border"></i>
+                            <span>
+                                me
+                                <i class="fa-solid fa-caret-down me"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="business-icon">
+                            <i class="fa-solid fa-grip-vertical for-business"></i>
+                            <span>
+                                for business
+                                <i class="fa-solid fa-caret-down down-arrow"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <div class="wrapper">
-        <div class="left-section">
-            <div class="banner">
-                <img src="./background.jpg" alt="banner image">
-                <i class="fa-solid fa-pencil fonts9"></i>
-            </div>
-
-            <div class="profile-section">
-                <div class="profile-dp">
-                    <img src="./img.jpg" alt="profile image">
+    <div class="wrapper container">
+        <div class="flex">
+            <div class="left-section">
+                <div class="banner">
+                    <img src="./background.jpg" alt="banner image">
+                    <i class="fa-solid fa-pencil fonts9"></i>
                 </div>
-
-                <i class="fa-solid fa-pencil fonts15"></i>
-
-                <div class="profile-description">
-                    <div class="profile-left">
-                        <h2>
-                            Shikhil Saxena
-                        </h2>
-                        <span>
-                            Software Engineer
-                        </span>
-                        <p>
-                            New Delhi
-                            <a href="#">.Contact Info</a>
-                        </p>
-                        <a href="#" class="connection-link">500+ connections</a>
-                        <div class="profile-button-wrapper">
-                            <button id="opento">Open to</button>
-                            <button id="Addprofile">Add profile section</button>
-                            <button id="more">more</button>
-                        </div>
+    
+                <div class="profile-section">
+                    <div class="profile-dp">
+                        <img src="./img.jpg" alt="profile image">
                     </div>
     
-                    <div class="profile-right">
-                        <h3>
-                            SRM UNIVERSITY
-                        </h3>
+                    <i class="fa-solid fa-pencil fonts15"></i>
+    
+                    <div class="profile-description">
+                        <div class="profile-left">
+                            <h2>
+                                Shikhil Saxena
+                            </h2>
+                            <span>
+                                Software Engineer
+                            </span>
+                            <p>
+                                New Delhi
+                                <a href="#">.Contact Info</a>
+                            </p>
+                            <a href="#" class="connection-link">500+ connections</a>
+                            <div class="profile-button-wrapper">
+                                <button id="opento">Open to</button>
+                                <button id="Addprofile">Add profile section</button>
+                                <button id="more">more</button>
+                            </div>
+                        </div>
+        
+                        <div class="profile-right">
+                            <h3>
+                                SRM UNIVERSITY
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="right-section aside">
-            <div class="profile-language">
-                <i class="fa-solid fa-pencil fonts10"></i>
-                <h3>
-                    Profile language
-                </h3>
-                <p>
-                    English
-                </p>
-            </div>
-            <hr>
-            <div class="public-profile">
-                <i class="fa-solid fa-pencil fonts10"></i>
-                <h3>
-                    Public profile & URL
-                </h3>
-                <p>
-                    www.linkedin.com/in/
-                </p>
-            </div>
-            <div class="company-aside">
-                <h4>
-                    To
-                </h4>
-                <i class="fa-solid fa-ellipsis fonts11"></i>
-                <p>
-                    New energy power and energy storage battery expert
-                </p>
-                <a href="#">
-                    <i class="border1"></i>
-                </a>
-                <h2>
-                    REPT
-                </h2>
-                <button id="follow-button">Follow</button>
-            </div>
-            <div class="other-similar-profile">
-                <div class="other-profile1">
-                    <a href="#">
-                        <i class="border2"></i>
-                    </a>
-                    <h4>
-                        Harish Sharma .2nd
-                    </h4>
+    
+            <div class="right-section aside">
+                <div class="profile-language">
+                    <i class="fa-solid fa-pencil fonts10"></i>
+                    <h3>
+                        Profile language
+                    </h3>
                     <p>
-                        Trellix | McAfee | Endpoint Security | Dlp
+                        English
                     </p>
-                    <button id="connect-button-1">Connect</button><i class="fa-solid fa-user-plus fonts12"></i>
                 </div>
                 <hr>
-                <div class="other-profile2">
-                    <a href="#">
-                        <i class="border3"></i>
-                    </a>
-                    <h4>
-                        Satish kaushik .3rd
-                    </h4>
+                <div class="public-profile">
+                    <i class="fa-solid fa-pencil fonts10"></i>
+                    <h3>
+                        Public profile & URL
+                    </h3>
                     <p>
-                        Software Developer at Amdocs
+                        www.linkedin.com/in/
                     </p>
-                    <button id="connect-button-2">Connect</button><i class="fa-solid fa-user-plus fonts13"></i>
                 </div>
-                <hr>
-                <div class="other-profile3">
-                    <a href="#">
-                        <i class="border4"></i>
-                    </a>
+                <div class="company-aside">
                     <h4>
-                        Rahul Verma .1st
+                        To
                     </h4>
+                    <i class="fa-solid fa-ellipsis fonts11"></i>
                     <p>
-                        HTML&CS || Python || Gross || Java.
+                        New energy power and energy storage battery expert
                     </p>
-                    <button id="connect-button-3">Connect</button><i class="fa-solid fa-user-plus fonts14"></i>
+                    <a href="#">
+                        <i class="border1"></i>
+                    </a>
+                    <h2>
+                        REPT
+                    </h2>
+                    <button id="follow-button">Follow</button>
+                </div>
+                <div class="other-similar-profile">
+                    <div class="other-profile1">
+                        <a href="#">
+                            <i class="border2"></i>
+                        </a>
+                        <h4>
+                            Harish Sharma .2nd
+                        </h4>
+                        <p>
+                            Trellix | McAfee | Endpoint Security | Dlp
+                        </p>
+                        <button id="connect-button-1">Connect</button><i class="fa-solid fa-user-plus fonts12"></i>
+                    </div>
+                    <hr>
+                    <div class="other-profile2">
+                        <a href="#">
+                            <i class="border3"></i>
+                        </a>
+                        <h4>
+                            Satish kaushik .3rd
+                        </h4>
+                        <p>
+                            Software Developer at Amdocs
+                        </p>
+                        <button id="connect-button-2">Connect</button><i class="fa-solid fa-user-plus fonts13"></i>
+                    </div>
+                    <hr>
+                    <div class="other-profile3">
+                        <a href="#">
+                            <i class="border4"></i>
+                        </a>
+                        <h4>
+                            Rahul Verma .1st
+                        </h4>
+                        <p>
+                            HTML&CS || Python || Gross || Java.
+                        </p>
+                        <button id="connect-button-3">Connect</button><i class="fa-solid fa-user-plus fonts14"></i>
+                    </div>
                 </div>
             </div>
         </div>
